@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:info="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Clinicas</title>
@@ -26,13 +26,13 @@
   <tr>
     <th>#</th>
     <th>Nombre de la clínica</th>
-    <th></th>
-    <th></th>
+    <th>Direccion</th>
+    <th>Telefono</th>
     <th></th>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
+  <tr th:each="shipper", info: ${listaClinicas}>
+    <td th:text="${info.index + 1}"></td>
+    <td th:text="${shipper.companyName}"></td>
     <td></td>
     <td><a class="btn btn-primary">Mostrar oftalmólogos</a>
     </td>
