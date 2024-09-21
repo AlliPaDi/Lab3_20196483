@@ -78,8 +78,12 @@ public class MainActivity extends AppCompatActivity {
                     // Ir a Pomodoro
                     Intent intent = new Intent(MainActivity.this, TimerActivity.class);
                     // Pasar datos del usuario
-                    intent.putExtra("username", usuario.getUsername());
+                    intent.putExtra("firstName", usuario.getFirstName());
+                    intent.putExtra("lastName", usuario.getLastName());
+                    intent.putExtra("email", usuario.getEmail());
+                    intent.putExtra("gender", usuario.getGender());
                     startActivity(intent);
+                    finish();
 
                 } else {
                     // Mostrar mensaje de error en inicio de sesion
