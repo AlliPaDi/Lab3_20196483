@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToDoListActivity">
+
+    <!-- Appbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8DEF8">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Pomodoro PUCP"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/ic_arrow_back"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tvMsgTareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver tareas de Nombre:"
+            android:layout_marginTop="40dp"/>
+
+        <Spinner
+            android:id="@+id/spTareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/btnState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar estado"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
