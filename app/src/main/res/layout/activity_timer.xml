@@ -95,7 +95,7 @@
             android:layout_marginBottom="10dp"/>
 
         <ImageButton
-            android:id="@+id/btnReboot"
+            android:id="@+id/ibStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="reiniciar_conteo"
